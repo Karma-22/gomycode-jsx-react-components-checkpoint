@@ -1,0 +1,155 @@
+/* App Wrapper */
+.app-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+  color: #0f172a;
+}
+
+.letter-spacing {
+  letter-spacing: 0.08em;
+}
+
+.main-title {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Product Card */
+.product-card {
+  border-radius: 1.5rem !important;
+  overflow: hidden;
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 35px -5px rgba(0, 0, 0, 0.12), 0 10px 15px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Image Component Styles */
+.product-image-wrapper {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  background-color: #f1f5f9;
+}
+
+.product-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-rating-badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  color: #f8fafc;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reviews-count {
+  color: #94a3b8;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+/* Name Component Styles */
+.product-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.35rem;
+  line-height: 1.35;
+  color: #0f172a;
+}
+
+/* Price Component Styles */
+.product-price-wrapper {
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 0.75rem;
+}
+
+.product-price {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2rem;
+  color: #2563eb !important;
+  letter-spacing: -0.02em;
+}
+
+/* Description Component Styles */
+.product-description {
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.feature-check {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* Greeting Card */
+.greeting-card {
+  border-radius: 1.25rem !important;
+  background: #ffffff;
+  border: 1px solid #e2e8f0 !important;
+  transition: all 0.3s ease;
+}
+
+.greeting-text {
+  font-family: 'Outfit', sans-serif;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+
+/* Avatar Styles */
+.avatar-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 3px solid #3b82f6;
+}
+
+.online-indicator {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 14px;
+  height: 14px;
+  background-color: #10b981;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.avatar-placeholder {
+  width: 60px;
+  height: 60px;
+  background-color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+/* Transitions */
+.transition-all {
+  transition: all 0.25s ease;
+}
